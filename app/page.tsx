@@ -77,7 +77,7 @@ export default function Home() {
 
   const submitHandler = async (e: any) => {
     e.preventDefault()
-    let res = await fetch('https://localhost:3000/api/get_weather', {
+    let res = await fetch('https://weather-app-taupe-seven.vercel.app/api/get_weather', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/x-www-form-urlencoded'
